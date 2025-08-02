@@ -1,14 +1,17 @@
 package Model
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type User struct {
-	Name                 string
-	Age                  uint16
-	Email                string
-	Money                float64
-	AvgGrades, Happiness float64
-	Hobbies              []string
+	ID        uint    `json:"id"`
+	Name      string  `json:"name"`
+	Age       uint16  `json:"age"`
+	Email     string  `json:"email"`
+	Money     float64 `json:"money"`
+	AvgGrades float64 `json:"grades"`
+	Happiness float64 `json:"happiness"`
 }
 
 func (u *User) GetFullInformation() string {

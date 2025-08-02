@@ -1,9 +1,8 @@
 package main
 
-import (
-	wwwController "CRUD_WebSite_GoLang/Controller"
-)
+import dao "CRUD_WebSite_GoLang/DAO"
 
 func main() {
-	wwwController.HandleRequest()
+	//wwwController.HandleRequest()
+	dao.DataConnection()
 }
